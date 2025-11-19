@@ -159,7 +159,7 @@ var levels = [
     selectorName : "Combinateur virgule",
     helpTitle: "Combinez les sélecteurs avec... des virgules !",
     syntax : "A, B",
-    help : 'Grâce à la technologie Shatner, cela sélectionne tous les éléments <strong>A</strong> et <strong>B</strong>. Vous pouvez combiner n\'importe quels sélecteurs de cette façon, et vous pouvez en spécifier plus de deux.',
+    help : 'Cela permet de sélectionner tous les éléments <strong>A</strong> et <strong>B</strong>. Vous pouvez combiner autant de sélecteurs que vous voulez de cette façon.',
     examples: [
     '<strong>p, .fun</strong> sélectionne tous les éléments <tag>p</tag> ainsi que tous les éléments avec <strong>class="fun"</strong>',
     '<strong>a, p, div</strong> sélectionne tous les éléments <tag>a</tag>, <tag>p</tag> et <tag>div</tag>'
@@ -354,7 +354,7 @@ var levels = [
     doThis : "Sélectionnez la petite pomme et le cornichon",
     selector : ".small:last-child",
     syntax: ":last-child",
-    help : "Vous pouvez utiliser ce sélecteur pour sélectionner un élément qui est le dernier élément enfant à l'intérieur d'un autre élément. <br><br>Astuce pro &rarr; Dans les cas où il n'y a qu'un seul élément, cet élément compte comme first-child, only-child et last-child !",
+    help : "Vous pouvez utiliser ce sélecteur pour sélectionner un élément qui est le dernier élément enfant à l'intérieur d'un autre élément. <br><br>Bon à savoir &rarr; Dans les cas où il n'y a qu'un seul élément, cet élément compte comme first-child, only-child et last-child !",
     examples : [
       '<strong>:last-child</strong> sélectionne tous les éléments derniers enfants.',
       '<strong>span:last-child</strong> sélectionne tous les éléments <tag>span</tag> derniers enfants.',
@@ -570,8 +570,8 @@ var levels = [
     syntax: "[attribute]",
     help : 'Les attributs apparaissent à l\'intérieur de la balise ouvrante d\'un élément, comme ceci : <tag>span attribute="value"</tag>. Un attribut n\'a pas toujours de valeur, il peut être vide !',
     examples : [
-      '<strong>a[href]</strong> sélectionne tous les éléments <tag>a</tag> qui ont un attribut <strong>href="n\'importe quoi"</strong>.',
-      '<strong>[type]</strong> sélectionne tous les éléments qui ont un attribut <strong>type="n\'importe quoi"</strong>.'
+      '<strong>a[href]</strong> sélectionne tous les éléments <tag>a</tag> qui ont un attribut <strong>href="une valeur quelconque"</strong>.',
+      '<strong>[type]</strong> sélectionne tous les éléments qui ont un attribut <strong>type="une valeur quelconque"</strong>.'
     ],
     boardMarkup:`
     <bento><apple class="small"/></bento>
@@ -588,8 +588,8 @@ var levels = [
     syntax: "A[attribute]",
     help : "Combinez le sélecteur d'attribut avec un autre sélecteur (comme le sélecteur de nom de balise) en l'ajoutant à la fin.",
     examples : [
-      '<strong>[value]</strong> sélectionne tous les éléments qui ont un attribut <strong>value="n\'importe quoi"</strong>.',
-      '<strong>a[href]</strong> sélectionne tous les éléments <tag>a</tag> qui ont un attribut <strong>href="n\'importe quoi"</strong>.',
+      '<strong>[value]</strong> sélectionne tous les éléments qui ont un attribut <strong>value="une valeur quelconque"</strong>.',
+      '<strong>a[href]</strong> sélectionne tous les éléments <tag>a</tag> qui ont un attribut <strong>href="une valeur quelconque"</strong>.',
       '<strong>input[disabled]</strong> sélectionne tous les éléments <tag>input</tag> avec l\'attribut <strong>disabled</strong>'
     ],
     boardMarkup:`
