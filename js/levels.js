@@ -33,7 +33,7 @@ var levels = [
     `
   },
   {
-    doThis : "Sélectionnez l'assiette chic",
+    doThis : "Sélectionnez l'assiette élégante",
     selector : "#fancy",
     selectorName: "Sélecteur d'ID",
     helpTitle: "Sélectionner des éléments avec un ID",
@@ -69,7 +69,7 @@ var levels = [
     `
   },
   {
-    doThis : "Sélectionnez le cornichon sur l'assiette chic",
+    doThis : "Sélectionnez le cornichon sur l'assiette élégante",
     selector : "#fancy pickle",
     helpTitle: "Combiner les sélecteurs de descendant et d'ID",
     syntax: "#id&nbsp;&nbsp;A",
@@ -134,8 +134,8 @@ var levels = [
   {
     doThis : "Sélectionnez les petites oranges dans les bentos",
     selector : "bento orange.small",
-    syntax: "Mettez-y du vôtre !",
-    helpTitle: "Vous pouvez le faire...",
+    syntax: "Allez, courage !",
+    helpTitle: "Vous y arriverez...",
     help : 'Combinez ce que vous avez appris dans les derniers niveaux pour résoudre celui-ci !',
     boardMarkup : `
     <bento>
@@ -299,7 +299,7 @@ var levels = [
   {
     selectorName: "Pseudo-sélecteur premier enfant",
     helpTitle: "Sélectionner le premier élément enfant à l'intérieur d'un autre élément",
-    doThis : "Sélectionnez l'orange du haut",
+    doThis : "Sélectionnez la première orange",
     selector : "plate :first-child",
     syntax: ":first-child",
 
@@ -539,7 +539,7 @@ var levels = [
   {
     selectorName: "Pseudo-classe de négation",
     helpTitle: "Sélectionner tous les éléments qui ne correspondent pas au sélecteur de négation",
-    doThis : "Sélectionnez les grandes pommes",
+    doThis : "Sélectionnez les grosses pommes",
     selector : "apple:not(.small)",
     syntax: ":not(X)",
     help : 'Vous pouvez utiliser ceci pour sélectionner tous les éléments qui ne correspondent pas au sélecteur <strong>"X"</strong>.',
@@ -565,7 +565,7 @@ var levels = [
   {
     selectorName: "Sélecteur d'attribut",
     helpTitle: "Sélectionner tous les éléments qui ont un attribut spécifique",
-    doThis : "Sélectionnez les éléments pour quelqu'un",
+    doThis : "Sélectionnez les plats destinés à quelqu'un",
     selector : "[for]",
     syntax: "[attribute]",
     help : 'Les attributs apparaissent à l\'intérieur de la balise ouvrante d\'un élément, comme ceci : <tag>span attribute="value"</tag>. Un attribut n\'a pas toujours de valeur, il peut être vide !',
@@ -619,7 +619,7 @@ var levels = [
   {
     selectorName: "Sélecteur d'attribut commençant par",
     helpTitle: "Sélectionner tous les éléments avec une valeur d'attribut qui commence par des caractères spécifiques",
-    doThis : "Sélectionnez les éléments pour les noms qui commencent par 'Sa'",
+    doThis : "Sélectionnez les plats des personnes dont le nom commence par 'Sa'",
     selector : '[for^="Sa"]',
     syntax: '[attribute^="value"]',
     // help : "You can use quotes around the value in the selector, or not&mdash;it's optional!",
@@ -635,7 +635,7 @@ var levels = [
   {
     selectorName: "Sélecteur d'attribut finissant par",
     helpTitle: "Sélectionner tous les éléments avec une valeur d'attribut qui finit par des caractères spécifiques",
-    doThis : "Sélectionnez les éléments pour les noms qui finissent par 'ato'",
+    doThis : "Sélectionnez les plats des personnes dont le nom finit par 'ato'",
     selector : '[for$="ato"]',
     syntax: '[attribute$="value"]',
     help : '',
@@ -654,7 +654,7 @@ var levels = [
     selectorName: "Sélecteur d'attribut joker",
     helpTitle: "Sélectionner tous les éléments avec une valeur d'attribut qui contient des caractères spécifiques n'importe où",
     syntax: '[attribute*="value"]',
-    doThis : "Sélectionnez les repas pour les noms qui contiennent 'obb'",
+    doThis : "Sélectionnez les plats des personnes dont le nom contient 'obb'",
     selector : '[for*="obb"]',
     help : 'Un sélecteur utile si vous pouvez identifier un motif commun dans des choses comme les attributs <strong>class</strong>, <strong>href</strong> ou <strong>src</strong>.',
     examples : [
