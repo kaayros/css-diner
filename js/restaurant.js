@@ -497,19 +497,10 @@ function trackProgress(levelNumber, type){
 }
 
 
-// Sends event to Google Analytics
-// Doesn't send events if we're on localhost, as the ga variable is set to false
+// Analytics tracking disabled
 function sendEvent(category, action, label){
-  if(!ga){
-    return;
-  }
-
-  ga('send', {
-    hitType: "event",
-    eventCategory: category,  // guess or progress
-    eventAction: action,      // action (correct vs not..)
-    eventLabel: label         // level number
-  });
+  // No tracking
+  return;
 }
 
 function winGame(){
