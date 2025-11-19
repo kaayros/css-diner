@@ -228,9 +228,9 @@ var levels = [
     doThis : "Sélectionnez chaque pomme qui est à côté d'une assiette",
     selector : "plate + apple",
     helpTitle: "Sélectionner un élément qui suit directement un autre élément",
-    selectorName: "Sélecteur de frère adjacent",
+    selectorName: "Sélecteur de voisin adjacent",
     syntax : "A + B",
-    help : "Cela sélectionne tous les éléments <strong>B</strong> qui suivent directement <strong>A</strong>. Les éléments qui se suivent sont appelés frères (siblings). Ils sont au même niveau, ou profondeur. <br/><br/>Dans le balisage HTML de ce niveau, les éléments qui ont la même indentation sont frères.",
+    help : "Cela sélectionne tous les éléments <strong>B</strong> qui suivent directement <strong>A</strong>. Les éléments qui se suivent sont appelés voisins. Ils sont au même niveau, ou profondeur. <br/><br/>Dans le balisage HTML de ce niveau, les éléments qui ont la même indentation sont voisins.",
     examples : [
       '<strong>p + .intro</strong> sélectionne tous les éléments avec <strong>class="intro"</strong> qui suivent directement un <tag>p</tag>',
       '<strong>div + a</strong> sélectionne tous les éléments <tag>a</tag> qui suivent directement un <tag>div</tag>'
@@ -248,12 +248,12 @@ var levels = [
     `
   },
   {
-    selectorName: "Sélecteur de frère général",
+    selectorName: "Sélecteur de voisin général",
     helpTitle: "Sélectionner des éléments qui suivent un autre élément",
     syntax: "A ~ B",
     doThis : "Sélectionnez les cornichons à côté du bento",
     selector : "bento ~ pickle",
-    help : "Vous pouvez sélectionner tous les frères d'un élément qui le suivent. C'est comme le sélecteur adjacent (A + B) sauf qu'il récupère tous les éléments suivants au lieu d'un seul.",
+    help : "Vous pouvez sélectionner tous les voisins d'un élément qui le suivent. C'est comme le sélecteur de voisin adjacent (A + B) sauf qu'il récupère tous les éléments suivants au lieu d'un seul.",
     examples : [
       '<strong>A ~ B</strong> sélectionne tous les <strong>B</strong> qui suivent un <strong>A</strong>'
     ],
