@@ -513,7 +513,7 @@ function sendEvent(category, action, label){
 }
 
 function winGame(){
-  $(".table").html('<span class="winner"><strong>You did it!</strong><br>You rock at CSS.</span>');
+  $(".table").html('<span class="winner"><strong>Vous avez réussi !</strong><br>Vous êtes un pro du CSS.</span>');
   addNametags();
   finished = true;
   resetTable();
@@ -630,7 +630,7 @@ function loadLevel(){
   loadBoard();
   resetTable();
 
-  $(".level-header .level-text").html("Level " + (currentLevel+1) + " of " + levels.length);
+  $(".level-header .level-text").html("Niveau " + (currentLevel+1) + " sur " + levels.length);
 
   updateProgressUI(currentLevel, checkCompleted(currentLevel));
 
